@@ -1,0 +1,38 @@
+Needed classes
+
+ihmc-java-toolkit
+	Throttler
+	StoredPropertySetBasics
+	FrequencyCalculator
+	Timer
+	UnitConversions
+	HybridResourceDirectory
+	HybridResourceFile
+	HybridResourceMode
+	JSONFileTools
+	StringTools
+	RobotSide
+	SwapReference
+	PlanarRegion
+	ResourceTools
+	HollowCylinderRayIntersection
+	DiscreteIsoscelesTriangularPrismRayIntersection
+	BoxRayIntersection
+	ResettableExceptionHandlingExecutorService
+	MissingThreadTools
+	IHMCCommonPaths
+
+ihmc-robotics-toolkit
+	ReferenceFrameLibrary
+	ReferenceFrameMissingTools
+	MutableReferenceFrame
+	SideDependentList
+	Axis3DRotations
+	SixDoFSelection
+	SphereRayIntersection
+	DiscreteTorusRayIntersection
+	Plane3DMouseDragAlgorithm
+	ClockFaceRotation3DMouseDragAlgorithm
+	PlanarRegionsList
+	PolynomialReadOnly
+

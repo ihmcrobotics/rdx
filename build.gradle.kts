@@ -4,8 +4,10 @@ plugins {
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
     mavenCentral()
+    maven {
+        url = uri("https://jitpack.io")
+    }
 }
 
 dependencies {
@@ -25,9 +27,28 @@ dependencies {
     implementation("io.github.spair:imgui-java-natives-macos-ft:$imguiVersion")
     implementation("io.github.spair:imgui-java-natives-windows-ft:$imguiVersion")
 
+    val lwjglVersion = "3.3.3"
+    api("org.lwjgl:lwjgl-openvr:$lwjglVersion")
+    api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-linux")
+    api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-windows")
+    api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-windows-x86")
+    api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-macos")
+    api("org.lwjgl:lwjgl-assimp:$lwjglVersion")
+    api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-linux")
+    api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-windows")
+    api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-windows-x86")
+    api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-macos")
+
+    implementation("us.ihmc:euclid-geometry:0.21.0")
+    implementation("us.ihmc:euclid-frame:0.21.0")
+
     implementation("us.ihmc:ihmc-commons:0.32.0") // TODO: Upgrade this, transitive vulnerable dependencies
+    implementation("us.ihmc:ihmc-graphics-description:0.25.1")
 
     implementation("net.sf.trove4j:trove4j:3.0.3") // TODO: Get rid of this
+
+    implementation("org.bytedeco:javacpp:1.5.9")
+    implementation("org.bytedeco:opencv:4.7.0-1.5.9")
 }
 
 java {
