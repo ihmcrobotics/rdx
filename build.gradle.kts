@@ -44,7 +44,7 @@ dependencies {
 
     implementation("us.ihmc:ihmc-commons:0.32.0") // TODO: Upgrade this, transitive vulnerable dependencies
     implementation("us.ihmc:ihmc-graphics-description:0.25.1")
-    implementation("us.ihmc:ihmc-java-toolkit:0.14.0-240126") // TODO: Upgrade
+    implementation("us.ihmc:ihmc-java-toolkit:0.14.0-240126") // TODO: Upgrade this, transitive vulnerable dependencies
     implementation("us.ihmc:ihmc-robotics-toolkit:0.14.0-240126") // TODO: Upgrade
 
 
@@ -52,6 +52,7 @@ dependencies {
 
     implementation("org.bytedeco:javacpp:1.5.9")
     implementation("org.bytedeco:opencv:4.7.0-1.5.9")
+    implementation("org.bytedeco:opencv-platform:4.7.0-1.5.9") // TODO: replace with only a few platforms
 }
 
 java {

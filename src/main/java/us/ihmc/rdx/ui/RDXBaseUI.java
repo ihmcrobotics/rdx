@@ -550,22 +550,23 @@ public class RDXBaseUI
 
       vrManager.renderMenuBar();
 
-      frameRateDisplay.ping();
-
-      if (plotFrameRate.get())
-      {
-         // Currently we manually tune this value when we change the stuff in the status a
-         float menuBarStatusWidth = 212.0f;
-         ImGui.sameLine(ImGui.getWindowSizeX() - menuBarStatusWidth);
-         frameRateDisplay.renderPlot();
-      }
-      else
-      {
-         float menuBarStatusWidth = 110.0f;
-         ImGui.sameLine(ImGui.getWindowSizeX() - menuBarStatusWidth);
-      }
-
-      frameRateDisplay.renderHz();
+      // TODO: RDXREFACTOR
+//      frameRateDisplay.ping();
+//
+//      if (plotFrameRate.get())
+//      {
+//         // Currently we manually tune this value when we change the stuff in the status a
+//         float menuBarStatusWidth = 212.0f;
+//         ImGui.sameLine(ImGui.getWindowSizeX() - menuBarStatusWidth);
+//         frameRateDisplay.renderPlot();
+//      }
+//      else
+//      {
+//         float menuBarStatusWidth = 110.0f;
+//         ImGui.sameLine(ImGui.getWindowSizeX() - menuBarStatusWidth);
+//      }
+//
+//      frameRateDisplay.renderHz();
 
       ImGui.text(FormattingTools.getFormattedDecimal2D(runTime.totalElapsed()) + " s");
 
