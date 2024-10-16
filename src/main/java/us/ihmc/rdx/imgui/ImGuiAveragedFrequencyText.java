@@ -25,7 +25,8 @@ public class ImGuiAveragedFrequencyText
 
       if (now - lastQueryTimeMs > 500)
       {
-         text = "%3d Hz".formatted((int) averagedFrequencyCalculator.getFrequencyDecaying());
+         // TODO: RDXREFACTOR
+//         text = "%3d Hz".formatted((int) averagedFrequencyCalculator.getFrequencyDecaying());
          lastQueryTimeMs = now;
       }
 

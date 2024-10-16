@@ -44,6 +44,9 @@ dependencies {
 
     implementation("us.ihmc:ihmc-commons:0.32.0") // TODO: Upgrade this, transitive vulnerable dependencies
     implementation("us.ihmc:ihmc-graphics-description:0.25.1")
+    implementation("us.ihmc:ihmc-java-toolkit:0.14.0-240126") // TODO: Upgrade
+    implementation("us.ihmc:ihmc-robotics-toolkit:0.14.0-240126") // TODO: Upgrade
+
 
     implementation("net.sf.trove4j:trove4j:3.0.3") // TODO: Get rid of this
 
