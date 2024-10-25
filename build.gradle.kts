@@ -8,7 +8,7 @@ ihmc {
     group = "us.ihmc"
     version = "1.0.0"
     vcsUrl = "https://github.com/ihmcrobotics/rdx"
-    openSource = false
+    openSource = true
 
     configureDependencyResolution()
     configurePublications()
