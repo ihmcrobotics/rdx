@@ -6,8 +6,8 @@ plugins {
 
 ihmc {
     group = "us.ihmc"
-    version = "0.0.1"
-    vcsUrl = "https://github.com/ihmcrobotics/franka-arms"
+    version = "1.0.0"
+    vcsUrl = "https://github.com/ihmcrobotics/rdx"
     openSource = false
 
     configureDependencyResolution()
