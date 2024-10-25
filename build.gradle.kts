@@ -24,7 +24,6 @@ mainDependencies {
     api("io.github.spair:imgui-java-binding:$imguiVersion")
     api("io.github.spair:imgui-java-lwjgl3:$imguiVersion")
     api("io.github.spair:imgui-java-natives-linux-ft:$imguiVersion")
-    api("io.github.spair:imgui-java-natives-macos-ft:$imguiVersion")
     api("io.github.spair:imgui-java-natives-windows-ft:$imguiVersion")
 
     val lwjglVersion = "3.3.3"
@@ -32,12 +31,10 @@ mainDependencies {
     api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-linux")
     api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-windows")
     api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-windows-x86")
-    api("org.lwjgl:lwjgl-openvr:$lwjglVersion:natives-macos")
     api("org.lwjgl:lwjgl-assimp:$lwjglVersion")
     api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-linux")
     api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-windows")
     api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-windows-x86")
-    api("org.lwjgl:lwjgl-assimp:$lwjglVersion:natives-macos")
 
     api("us.ihmc:euclid-geometry:0.21.0")
     api("us.ihmc:euclid-frame:0.21.0")
@@ -50,6 +47,8 @@ mainDependencies {
     api("net.sf.trove4j:trove4j:3.0.3") // TODO: Get rid of this
 
     api("org.bytedeco:javacpp:1.5.9")
-    api("org.bytedeco:opencv:4.7.0-1.5.9")
-    api("org.bytedeco:opencv-platform:4.7.0-1.5.9") // TODO: replace with only a few platforms
+    val opencvVersion = "4.7.0-1.5.9"
+    api("org.bytedeco:opencv:$opencvVersion")
+    api("org.bytedeco:opencv:$opencvVersion:linux-x86_64")
+    api("org.bytedeco:opencv:$opencvVersion:windows-x86_64")
 }
